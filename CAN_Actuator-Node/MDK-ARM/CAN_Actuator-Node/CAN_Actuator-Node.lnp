@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"can_actuator-node\startup_stm32f103xb.o"
+"can_actuator-node\main.o"
+"can_actuator-node\stm32f1xx_it.o"
+"can_actuator-node\stm32f1xx_hal_msp.o"
+"can_actuator-node\stm32f1xx_hal_gpio_ex.o"
+"can_actuator-node\stm32f1xx_hal_can.o"
+"can_actuator-node\stm32f1xx_hal.o"
+"can_actuator-node\stm32f1xx_hal_rcc.o"
+"can_actuator-node\stm32f1xx_hal_rcc_ex.o"
+"can_actuator-node\stm32f1xx_hal_gpio.o"
+"can_actuator-node\stm32f1xx_hal_dma.o"
+"can_actuator-node\stm32f1xx_hal_cortex.o"
+"can_actuator-node\stm32f1xx_hal_pwr.o"
+"can_actuator-node\stm32f1xx_hal_flash.o"
+"can_actuator-node\stm32f1xx_hal_flash_ex.o"
+"can_actuator-node\stm32f1xx_hal_exti.o"
+"can_actuator-node\stm32f1xx_hal_tim.o"
+"can_actuator-node\stm32f1xx_hal_tim_ex.o"
+"can_actuator-node\stm32f1xx_hal_uart.o"
+"can_actuator-node\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CAN_Actuator-Node\CAN_Actuator-Node.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CAN_Actuator-Node.map" -o CAN_Actuator-Node\CAN_Actuator-Node.axf

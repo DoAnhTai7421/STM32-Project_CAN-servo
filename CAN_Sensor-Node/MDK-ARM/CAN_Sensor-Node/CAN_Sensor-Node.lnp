@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"can_sensor-node\startup_stm32f103xb.o"
+"can_sensor-node\main.o"
+"can_sensor-node\stm32f1xx_it.o"
+"can_sensor-node\stm32f1xx_hal_msp.o"
+"can_sensor-node\stm32f1xx_hal_gpio_ex.o"
+"can_sensor-node\stm32f1xx_hal_adc.o"
+"can_sensor-node\stm32f1xx_hal_adc_ex.o"
+"can_sensor-node\stm32f1xx_hal.o"
+"can_sensor-node\stm32f1xx_hal_rcc.o"
+"can_sensor-node\stm32f1xx_hal_rcc_ex.o"
+"can_sensor-node\stm32f1xx_hal_gpio.o"
+"can_sensor-node\stm32f1xx_hal_dma.o"
+"can_sensor-node\stm32f1xx_hal_cortex.o"
+"can_sensor-node\stm32f1xx_hal_pwr.o"
+"can_sensor-node\stm32f1xx_hal_flash.o"
+"can_sensor-node\stm32f1xx_hal_flash_ex.o"
+"can_sensor-node\stm32f1xx_hal_exti.o"
+"can_sensor-node\stm32f1xx_hal_can.o"
+"can_sensor-node\stm32f1xx_hal_tim.o"
+"can_sensor-node\stm32f1xx_hal_tim_ex.o"
+"can_sensor-node\stm32f1xx_hal_uart.o"
+"can_sensor-node\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "CAN_Sensor-Node\CAN_Sensor-Node.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CAN_Sensor-Node.map" -o CAN_Sensor-Node\CAN_Sensor-Node.axf
